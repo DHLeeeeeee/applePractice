@@ -1,0 +1,175 @@
+body {
+  color: #444444;
+}
+
+.inner,
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tit {
+  line-height: 1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.sec {
+  padding: 100px 0;
+}
+
+.move {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.header {
+  line-height: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  /* opacity: 0.1; */
+}
+
+.header h1 {
+  font-size: 0;
+}
+
+.header h1 a img {
+  vertical-align: middle;
+}
+
+.header .inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .gnb ul {
+  gap: 60px;
+  color: #f9f9f9;
+}
+
+.header .gnb > ul > li {
+  position: relative;
+}
+
+.header .gnb > ul > li ~ li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+  transform: translate(0, -50%);
+}
+
+.mainVisual {
+  position: relative;
+  height: 700px;
+  background: url(../img/main01.jpg) no-repeat center center / cover;
+}
+
+.mainVisual .inner {
+  transform: translate(-50%, -50%);
+}
+
+.mainVisual .inner h2 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #f9f9f9;
+  margin: 0 0 35px 0;
+}
+
+.mainVisual .inner p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #f9f9f9;
+  line-height: 25px;
+}
+
+.mainContent {
+  background: #f9f9f9;
+}
+
+.mainContent .inner {
+  gap: 30px;
+}
+
+.mainContent .inner figure {
+  position: relative;
+}
+
+.mainContent .inner figure:first-child::after {
+  content: "Apple Card";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -450%);
+  color: #444444;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.mainContent .inner figure:nth-child(2)::after {
+  content: "iPhone 14";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -450%);
+  color: #f9f9f9;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.mainContent .inner figure:last-child::after {
+  content: "iPad";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -450%);
+  color: #444444;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.mainContent .inner figure img {
+  max-width: 100%;
+}
+
+.mainPromo {
+  position: relative;
+  height: 500px;
+  text-align: center;
+  background: url(../img/main03.jpg) no-repeat center center / cover;
+}
+
+.mainPromo h2 {
+  transform: translate(-50%, -250%);
+  font-size: 80px;
+  font-weight: 800;
+  color: #f9f9f9;
+}
+
+.mainPromo h3 {
+  transform: translate(-50%, -230%);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #444444;
+}
+
+.mainPromo a {
+  transform: translate(-50%, -200%);
+  font-size: 24px;
+  font-weight: 300;
+  color: cornflowerblue;
+}
+
+.footer {
+  margin-top: 100px;
+  height: 100px;
+  background: #f9f9f9;
+}
